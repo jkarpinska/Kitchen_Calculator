@@ -1,0 +1,5 @@
+water,1000
+flour,600
+sugar,850
+oil,920
+olive oil,920
