@@ -16,9 +16,11 @@ Java SE 8 + JavaFX
 
 ## Build status
 Basic functionality finished.
+Installation file built.
 
 ## Planned improvements
-Build .exe file for istallation purposes.
+Change the build to let users install to chosen directory.
+Create a mobile app based on this one.
 
 ## Credits
 App icon from [AomAm](https://www.iconfinder.com/aomam.ss)
