@@ -96,20 +96,13 @@ public class ConverterViewController {
 	private void initialize() {
 		showAnswer(null);
 		
-		txtAmount.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (!newValue.matches("\\d{0,7}([\\.]\\d{0,4})?")) {
-                    txtAmount.setText(oldValue);
-                }
+		txtAmount.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue.matches("\\d{0,7}([\\.]\\d{0,4})?")) {
+                txtAmount.setText(oldValue);
             }
         });
 		
-		btConvert.setOnAction(new EventHandler<ActionEvent>(){
-			@Override 
-			public void handle(ActionEvent e) {
-				handleBt();
-			}
-		});
+		btConvert.setOnAction(e -> handleBt());
 	}
 	
     public void setMainApp(MainApp mainApp) {

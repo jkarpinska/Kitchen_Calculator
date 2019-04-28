@@ -108,7 +108,7 @@ public class MainApp extends Application {
 		loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
 		
 		try {
-			rootLayout = (BorderPane) loader.load();
+			rootLayout = loader.load();
 			
 			Scene mainScene = new Scene(rootLayout);
 			
@@ -125,7 +125,7 @@ public class MainApp extends Application {
 		loader.setLocation(MainApp.class.getResource("view/ConverterView.fxml"));
 		
 		try {
-			AnchorPane ConverterView = (AnchorPane) loader.load();
+			AnchorPane ConverterView = loader.load();
 			
 			rootLayout.setCenter(ConverterView);
 			

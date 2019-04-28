@@ -1,5 +1,15 @@
 water,1000
-flour,600
+wheat flour,600
+potato flour,800
 sugar,850
+powdered sugar,680
 oil,920
 olive oil,920
+milk,1030
+sour cream 30%,1080
+sour cream 18%,920
+cocoa,533
+coconut shrims,460
+crumbs,600
+rice,920
+salt,1267

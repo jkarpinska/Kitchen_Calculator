@@ -98,14 +98,14 @@
 		<fx:resources id="appRes">
 			<fx:fileset dir="dist" includes="KitchCalculator.jar"/>
 			<fx:fileset dir="dist" includes="libs/*"/>
-			<fx:fileset dir="dist" includes="resources/**"/>
+			<fx:fileset dir="dist" includes="resources/*"/>
 		</fx:resources>
 	
 		<fx:application id="fxApplication"
 			name="KitchenCalculator"
 			mainClass="c.MainApp"
-			toolkit="fx"
 			version="1.0"
+			toolkit="fx"
 		/>
 	
 		<mkdir dir="build/classes/META-INF" />
@@ -119,7 +119,7 @@
 			<fx:resources refid="appRes"/>
 	
 			<manifest>
-				<attribute name="Implementation-Vendor" value="Karpik"/>
+				<attribute name="Implementation-Vendor" value="Joanna Karpinska"/>
 				<attribute name="Implementation-Title" value="KitchenCalculator"/>
 				<attribute name="Implementation-Version" value="1.0"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
@@ -135,11 +135,11 @@
 			includeDT="false"
 			offlineAllowed="true"
 			outdir="${basedir}/deploy"
-			outfile="KitchCalculator" nativeBundles="exe"
+			outfile="KitchenCalculator" nativeBundles="exe"
 			updatemode="background" >
 	
 			<fx:platform basedir="${java.home}"/>
-			<fx:info title="KitchCalculator" vendor="Karpik"/>
+			<fx:info title="KitchenCalculator" vendor="Joanna Karpinska"/>
 	
 			<fx:application refId="fxApplication"/>
 			<fx:resources refid="appRes"/>

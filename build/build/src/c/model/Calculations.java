@@ -55,7 +55,7 @@ public class Calculations {
 		double size2 = unitsMMap.get(unit2);
 		double density = productsMap.get(product);
 		
-		double x = amount*size1*density/1000*size2;
+		double x = amount*size1*density/(1000*size2);
 		
 		return x;
 	}
